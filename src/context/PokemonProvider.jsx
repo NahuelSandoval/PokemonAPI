@@ -31,7 +31,7 @@ const PokemonProvider = ({ children }) => {
         const res = await fetch(`${baseURL}pokemon?limit=${limit}&offset=${offset}`)
         const data = await res.json();
         // Con esta funcion se va a buscar el array de pokemones (results)
-        const promises = data.results.map(async (pokemon) => {
+        const promises = data.results.map(async pokemon => {
             const res = await fetch(pokemon.url)
             const data = await res.json();
             return data
@@ -45,7 +45,6 @@ const PokemonProvider = ({ children }) => {
             ...results
         ])
 
-
         setLoading(false)
         //Cuando termina de cargar se vuelve false
     }
@@ -58,7 +57,7 @@ const PokemonProvider = ({ children }) => {
         const res = await fetch(`${baseURL}pokemon?limit=100000&offset=0`)
         const data = await res.json();
         // Con esta funcion se va a buscar el array de pokemones (results)
-        const promises = data.results.map(async (pokemon) => {
+        const promises = data.results.map(async pokemon => {
             const res = await fetch(pokemon.url)
             const data = await res.json();
             return data
@@ -124,7 +123,7 @@ const PokemonProvider = ({ children }) => {
 
     const [filteredPokemon, setFilteredPokemon] = useState([])
 
-    const handleCheckBox = (e) => {
+    const handleCheckBox = e => {
 
         setTypeSelected({
             ...typeSelected,
@@ -135,7 +134,7 @@ const PokemonProvider = ({ children }) => {
             const filteredResults = globalPokemon.filter(pokemon =>
                 pokemon.types
                     .map(type => type.type.name)
-                    .includes(e.target.name))
+                    .includes(e.target.name));
 
             setFilteredPokemon([...filteredPokemon, ...filteredResults])
         } else {
@@ -146,7 +145,7 @@ const PokemonProvider = ({ children }) => {
 
             setFilteredPokemon([...filteredResults])
         }
-    }
+    };
 
     return (
         <PokemonContext.Provider

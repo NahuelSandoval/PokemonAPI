@@ -6,7 +6,7 @@ import Loader from './Loader'
 
 const PokemonList = () => {
 
-  const { allPokemon, loading, filteredPokemon } = useContext(PokemonContext)
+  const { allPokemon, loading, filteredPokemon  } = useContext(PokemonContext)
 
   return (
     <>
@@ -22,7 +22,7 @@ const PokemonList = () => {
                 </>
               ) : (
                 <>
-                  {filteredPokemon.map(pokemon => <CardPokemon pokemon={pokemon} key={pokemon.id} />)}
+                  {allPokemon.map(pokemon => <CardPokemon pokemon={pokemon} key={pokemon.id} />)}
                 </>
               )
             }

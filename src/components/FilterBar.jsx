@@ -4,7 +4,7 @@ import { PokemonContext } from '../context/PokemonContext'
 
 const FilterBar = () => {
 
-  const { active, handleCheckbox } = useContext(PokemonContext)
+  const { active,  handleCheckBox } = useContext(PokemonContext)
 
 
   return (
@@ -15,76 +15,76 @@ const FilterBar = () => {
         </span>
 
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="grass" id="grass" />
-          <label htmlfor="grass">Planta</label>
+          <input onChange={handleCheckBox} type="checkbox" name="grass" id="grass" />
+          <label htmlFor="grass">Planta</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="fire" id="fire" />
-          <label htmlfor="fire">Fuego</label>
+          <input onChange={handleCheckBox} type="checkbox" name="fire" id="fire" />
+          <label htmlFor="fire">Fuego</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="bug" id="bug" />
-          <label htmlfor="bug">Bicho</label>
+          <input onChange={handleCheckBox} type="checkbox" name="bug" id="bug" />
+          <label htmlFor="bug">Bicho</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="fairy" id="fairy" />
-          <label htmlfor="fairy">Hada</label>
+          <input onChange={handleCheckBox} type="checkbox" name="fairy" id="fairy" />
+          <label htmlFor="fairy">Hada</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="dragon" id="dragon" />
-          <label htmlfor="dragon">Dragón</label>
+          <input onChange={handleCheckBox} type="checkbox" name="dragon" id="dragon" />
+          <label htmlFor="dragon">Dragón</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="shadow" id="shadow" />
-          <label htmlfor="shadow">Fantasma</label>
+          <input onChange={handleCheckBox} type="checkbox" name="shadow" id="shadow" />
+          <label htmlFor="shadow">Fantasma</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="ground" id="ground" />
-          <label htmlfor="ground">Tierra</label>
+          <input onChange={handleCheckBox} type="checkbox" name="ground" id="ground" />
+          <label htmlFor="ground">Tierra</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="normal" id="normal" />
-          <label htmlfor="normal">Normal</label>
+          <input onChange={handleCheckBox} type="checkbox" name="normal" id="normal" />
+          <label htmlFor="normal">Normal</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="psychic" id="psychic" />
-          <label htmlfor="psychic">Psíquico</label>
+          <input onChange={handleCheckBox} type="checkbox" name="psychic" id="psychic" />
+          <label htmlFor="psychic">Psíquico</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="steel" id="steel" />
-          <label htmlfor="steel">Acero</label>
+          <input onChange={handleCheckBox} type="checkbox" name="steel" id="steel" />
+          <label htmlFor="steel">Acero</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="dark" id="dark" />
-          <label htmlfor="dark">Siniestro</label>
+          <input onChange={handleCheckBox} type="checkbox" name="dark" id="dark" />
+          <label htmlFor="dark">Siniestro</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="electric" id="electric" />
-          <label htmlfor="electric">Eléctrico</label>
+          <input onChange={handleCheckBox} type="checkbox" name="electric" id="electric" />
+          <label htmlFor="electric">Eléctrico</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="fighting" id="fighting" />
-          <label htmlfor="fighting">Lucha</label>
+          <input onChange={handleCheckBox} type="checkbox" name="fighting" id="fighting" />
+          <label htmlFor="fighting">Lucha</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="flying" id="flying" />
-          <label htmlfor="flying">Volador</label>
+          <input onChange={handleCheckBox} type="checkbox" name="flying" id="flying" />
+          <label htmlFor="flying">Volador</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="ice" id="ice" />
-          <label htmlfor="ice">Hielo</label>
+          <input onChange={handleCheckBox} type="checkbox" name="ice" id="ice" />
+          <label htmlFor="ice">Hielo</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="poison" id="poison" />
-          <label htmlfor="poison">Veneno</label>
+          <input onChange={handleCheckBox} type="checkbox" name="poison" id="poison" />
+          <label htmlFor="poison">Veneno</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="rock" id="rock" />
-          <label htmlfor="rock">Roca</label>
+          <input onChange={handleCheckBox} type="checkbox" name="rock" id="rock" />
+          <label htmlFor="rock">Roca</label>
         </div>
         <div className="group-type">
-          <input onChange={handleCheckbox} type="checkbox" name="water" id="water" />
-          <label htmlfor="water">Agua</label>
+          <input onChange={handleCheckBox} type="checkbox" name="water" id="water" />
+          <label htmlFor="water">Agua</label>
         </div>
       </div>
     </div>
